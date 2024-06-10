@@ -1,11 +1,7 @@
 streamlit
 PyPDF2
-google.generativeai
-word_tokenize
-cosine_similarity
-TfidfVectorizer
-Image
-pytesseract
+google-generativeai
 nltk
-sklearn
-PIL
+scikit-learn
+Pillow
+pytesseract
