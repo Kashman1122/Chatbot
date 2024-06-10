@@ -7,3 +7,6 @@ cosine_similarity
 TfidfVectorizer
 Image
 pytesseract
+nltk
+sklearn
+PIL
