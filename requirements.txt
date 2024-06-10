@@ -1,0 +1,9 @@
+streamlit
+io
+PyPDF2
+google.generativeai
+word_tokenize
+cosine_similarity
+TfidfVectorizer
+Image
+pytesseract
