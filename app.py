@@ -467,13 +467,13 @@ def reply(user_message, pdf_content, chat_with_document=True):
         return convo.last.text
 
 # Streamlit UI
-st.title("👩‍💻 Chat with Kashish 🤖")
+st.title("👩‍💻 Chat with pdf 🤖")
 
-option = st.sidebar.selectbox("Select an option:", ["Kashish Chat", "Open Chat"])
+option = st.sidebar.selectbox("Select an option:", ["pdf chat", "Open Chat"])
 
-if option == "Kashish Chat":
+if option == "pdf Chat":
     uploaded_file = st.file_uploader("📂 Upload a PDF", type="pdf")
-    user_message = st.text_input("💬 Hi, I'm Kashish! How can I help you today?")
+    user_message = st.text_input("💬 Hi, I'm Damini! How can I help you today?")
 
     if uploaded_file is not None:
         # Read the PDF content
@@ -489,7 +489,7 @@ if option == "Kashish Chat":
 
 else:
     uploaded_file = st.file_uploader("📂 Upload a PDF or Image", type=["pdf", "png", "jpg", "jpeg"])
-    user_message = st.text_input("💬 Hi, I'm Kashish! How can I help you today?")
+    user_message = st.text_input("💬 Hi, I'm Damini! How can I help you today?")
 
     pdf_content = ""
     if uploaded_file is not None:
@@ -508,7 +508,7 @@ else:
             response = reply(user_message, pdf_content=pdf_content, chat_with_document=True)
         else:
             response = reply(user_message, pdf_content=None, chat_with_document=False)
-        st.write("🤖 Kashish's Response:")
+        st.write("🤖 Damini's Response:")
         st.write(response)
 
 
