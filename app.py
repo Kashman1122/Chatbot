@@ -312,7 +312,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 from PIL import Image
 import pytesseract
+import nltk
 
+nltk.download('punkt_tab')
 # Configure Tesseract path (adjust the path based on your installation)
 # For Windows
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
