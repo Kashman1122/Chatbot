@@ -324,7 +324,7 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\t
 # pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
 
 # Configure GenAI
-genai.configure(api_key="AIzaSyBGr8QJ-5E_IY2DlhKL668swEVq_PCGs80")
+genai.configure(api_key="AIzaSyAdAP8sWtGRVBJt4oW1ZThi18dJFwAOg98")
 
 def extract_text_from_pdf(file_buffer):
     text = ""
